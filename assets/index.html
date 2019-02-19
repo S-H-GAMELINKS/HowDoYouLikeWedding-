@@ -4,7 +4,77 @@
             <a class="navbar-brand" href="/">How Do You Like Wedding?</a>
         </nav>
         <h1> Invitation Wedding </h1>
-        <div data-controller="invite">
+        <div data-controller="invite">    
+            <div class="input-group">
+                <div class="input-group-append">
+                    <span class="input-group-text">氏名</span>
+                </div>
+                <input type="text" class="form-control" data-target="name"> 
+            </div>
+                
+            <div class="input-group">
+                <div class="input-group-append">
+                    <span class="input-group-text">フリガナ</span>
+                </div>
+                <input type="text" class="form-control" data-target="name_furi"> 
+            </div>
+                
+            <div class="input-group">
+                <div class="input-group-append">
+                    <span class="input-group-text">出欠</span>
+                </div>
+                <select data-target="attendance">
+                        <option>出欠確認</option>
+                        <option>出席</option>
+                        <option>欠席</option>
+                </select> 
+            </div>
+                
+            <div class="input-group">
+                <div class="input-group-append">
+                    <span class="input-group-text">郵便番号</span>
+                </div>
+                <input type="text" class="form-control" data-target="yubin"> 
+            </div>
+                        
+            <div class="input-group">
+                <div class="input-group-append">
+                    <span class="input-group-text">住所</span>
+                </div>
+               <input type="text" class="form-control" data-target="address"> 
+            </div>
+                
+            <div class="input-group">
+                <div class="input-group-append">
+                    <span class="input-group-text">メールアドレス</span>
+                </div>
+                <input type="text" class="form-control" data-target="email"> 
+            </div>
+                
+            <div class="input-group">
+                <div class="input-group-append">
+                    <span class="input-group-text">電話番号</span>
+                </div>
+                <input type="text" class="form-control" data-target="tel"> 
+            </div>
+                
+            <div class="input-group">
+                <div class="input-group-append">
+                    <span class="input-group-text">アレルギーなど</span>
+                </div>
+                <input type="text" class="form-control" data-target="allergy"> 
+            </div>
+                
+            <div class="input-group">
+                <div class="input-group-append">
+                    <span class="input-group-text">備考</span>
+                </div>
+                <input type="text" class="form-control" data-target="other"> 
+            </div>
+                
+            <p>
+                <button type="button" class="btn btn-primary" data-action="click->invite#sendMail">送信</button>
+            </p>
         </div>
         <script src="./index.js" type="text/javascript"></script>
     </body>
