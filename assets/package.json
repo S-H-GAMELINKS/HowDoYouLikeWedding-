@@ -6,6 +6,7 @@
     "bootstrap-umi": "^4.0.0",
     "css-loader": "^2.1.0",
     "dotenv-webpack": "^1.7.0",
+    "jquery": "^3.3.1",
     "stimulus": "^1.1.1",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.4",
