@@ -3,3 +3,4 @@ httplib.h.gch
 a.exe
 assets/node_modules
 assets/index.js
+assets/.env
