@@ -1,0 +1,10 @@
+{
+    "scripts": {
+      "build": "webpack --display-error-details"
+    },
+    "dependencies": {
+      "stimulus": "^1.1.1",
+      "webpack": "^4.29.4",
+      "webpack-cli": "^3.2.3"
+    }
+  }
