@@ -3,5 +3,16 @@ module.exports = {
     output: {
         filename: 'index.js',
         path: `${__dirname}`
-    }
+    },
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
+            }
+        ]
+    },
 }
